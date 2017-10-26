@@ -80,10 +80,90 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            About
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>4/5+ years experience with Angular</ListItem>
+            <ListItem>Blogger: toddmotto.com</ListItem>
+            <ListItem>Trainer: ultimateangular.com</ListItem>
+            <ListItem>In progress: liquify.io</ListItem>
+            <ListItem>GDE for Angular/Web Technologies</ListItem>
+            <ListItem>Conference and workshop training</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Today's plan
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>State management concepts</ListItem>
+            <ListItem>Small application to apply concepts</ListItem>
+            <ListItem>Move onto advanced app and examples</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Teaching style
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>Make you think</ListItem>
+            <ListItem>Challenge you</ListItem>
+            <ListItem>Facilitate you coming up with answers</ListItem>
+            <ListItem>Not giving you all the answers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
+          <BlockQuote>
+            <Quote>
+              Show me and I will forget. Teach me I will remember. Involve me
+              and I will understand.
+            </Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            What will we learn?
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>Redux philosophy / single state tree</ListItem>
+            <ListItem>What, why, how with Stores</ListItem>
+            <ListItem>One-way dataflow and architecture</ListItem>
+            <ListItem>Immutability and performance</ListItem>
+            <ListItem>Actions, Reducers, Observables</ListItem>
+            <ListItem>Side effects management</ListItem>
+            <ListItem>Testing and debugging</ListItem>
+            <ListItem>Some advanced topics</ListItem>
+          </List>
+        </Slide>
+
         <Slide transition={['slide']} bgImage={images.audience} bgDarken={0.5}>
           <Heading textColor="primary" caps fit>
             Audience introduction
           </Heading>
+        </Slide>
+
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Project setup
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>Visit: </ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            What is state management?
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>Visit: </ListItem>
+          </List>
         </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -96,14 +176,6 @@ export default class Presentation extends React.Component {
             <ListItem>Item 3</ListItem>
             <ListItem>Item 4</ListItem>
           </List>
-        </Slide>
-        <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <BlockQuote>
-            <Quote>
-              Show me and I will forget. Teach me I will remember. Involve me
-              and I will understand.
-            </Quote>
-          </BlockQuote>
         </Slide>
       </Deck>
     );
