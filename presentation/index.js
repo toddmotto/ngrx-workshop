@@ -159,10 +159,25 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['zoom', 'fade']}>
           <Heading size={4} caps textColor="tertiary">
-            What is state management?
+            What is state?
           </Heading>
-          <List textColor="secondary">
-            <ListItem>Visit: </ListItem>
+          <List>
+            <ListItem>What's happening</ListItem>
+            <ListItem>e.g. value of an input</ListItem>
+            <ListItem>e.g. a list of items</ListItem>
+            <ListItem>e.g. an open navbar</ListItem>
+            <ListItem>e.g. variables, classes, data structures</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['zoom', 'fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            State management libraries
+          </Heading>
+          <List>
+            <ListItem>Model our app state</ListItem>
+            <ListItem>Derive computed values from state</ListItem>
+            <ListItem>Monitor/observe changes to state</ListItem>
           </List>
         </Slide>
 
@@ -170,12 +185,6 @@ export default class Presentation extends React.Component {
           <Heading size={6} textColor="secondary" caps>
             Standard List
           </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
         </Slide>
       </Deck>
     );
