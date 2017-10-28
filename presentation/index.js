@@ -48,11 +48,7 @@ const theme = createTheme(
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck
-        transition={['zoom', 'slide']}
-        transitionDuration={500}
-        theme={theme}
-      >
+      <Deck transition={['slide']} transitionDuration={500} theme={theme}>
         <Slide transition={['fade']} bgColor="tertiary">
           <Image width="35%" src={images.logo} />
           <Heading
@@ -66,7 +62,7 @@ export default class Presentation extends React.Component {
             NGRX: the workshop
           </Heading>
           <Text margin="10px 0 0" textColor="white" size={1}>
-            @ngrx/store and @ngrx/effects
+            ngrx/store and ngrx/effects
           </Text>
         </Slide>
 
@@ -80,7 +76,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             About
           </Heading>
@@ -94,7 +90,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             Today's plan
           </Heading>
@@ -105,7 +101,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             Teaching style
           </Heading>
@@ -126,7 +122,7 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             What will we learn?
           </Heading>
@@ -142,13 +138,13 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['slide']} bgImage={images.audience} bgDarken={0.5}>
+        <Slide transition={['fade']} bgImage={images.audience} bgDarken={0.5}>
           <Heading textColor="primary" caps fit>
             Audience introduction
           </Heading>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             Project setup
           </Heading>
@@ -157,7 +153,13 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="primary" caps>
+            Part I: Concepts
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             What is state?
           </Heading>
@@ -170,7 +172,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             State management libraries
           </Heading>
@@ -183,8 +185,37 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Standard List
+            Meet ngrx/store
           </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            ngrx/store
+          </Heading>
+          <List>
+            <ListItem>Store</ListItem>
+            <ListItem>Actions</ListItem>
+            <ListItem>Reducers</ListItem>
+            <ListItem>Selectors</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Observations
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Observations
+          </Heading>
+          <List>
+            <ListItem>Single source of truth</ListItem>
+            <ListItem>Immutable/read-only</ListItem>
+            <ListItem>Reducer: pure function</ListItem>
+          </List>
         </Slide>
       </Deck>
     );
