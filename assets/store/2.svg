@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="720px" viewBox="0 0 1280 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>1.1 ngrx-diagrams</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60" cy="60" r="60"></circle>
+        <circle id="path-2" cx="60" cy="60" r="60"></circle>
+        <rect id="path-3" x="0" y="0" width="160" height="50" rx="5"></rect>
+        <circle id="path-4" cx="60" cy="60" r="60"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-ngrx-diagrams">
+            <g id="diagram" transform="translate(170.000000, 40.000000)">
+                <text id="Render" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" fill="#545E6F">
+                    <tspan x="120" y="480">Render</tspan>
+                </text>
+                <path d="M81.9558416,358.853247 L92.1145305,373.36566 L92.1145305,373.36566 C92.7479595,374.270558 92.5278899,375.517619 91.6229913,376.151048 C91.2868242,376.386365 90.8864108,376.512584 90.4760666,376.512584 L70.1586889,376.512584 L70.1586889,376.512584 C69.0541194,376.512584 68.1586889,375.617154 68.1586889,374.512584 C68.1586889,374.10224 68.2849081,373.701827 68.520225,373.36566 L78.6789139,358.853247 L78.6789139,358.853247 C79.3123429,357.948348 80.5594038,357.728279 81.4643024,358.361708 C81.6555851,358.495606 81.8219437,358.661964 81.9558416,358.853247 Z" id="arrow-head" fill="#545E6F"></path>
+                <text id="New-State" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" fill="#545E6F">
+                    <tspan x="612.79" y="480">New State</tspan>
+                </text>
+                <g id="Group" transform="translate(466.000000, 464.000000)">
+                    <g id="Oval">
+                        <use fill="#8E7CB9" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#FFFFFF" stroke-width="18" cx="60" cy="60" r="69"></circle>
+                    </g>
+                    <text id="STATE" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" letter-spacing="0.600000024" fill="#FFFFFF">
+                        <tspan x="31" y="66">STATE</tspan>
+                    </text>
+                </g>
+                <path d="M612.894584,515.914504 L623.053273,530.426917 L623.053273,530.426917 C623.686702,531.331816 623.466633,532.578877 622.561734,533.212306 C622.225567,533.447622 621.825154,533.573842 621.414809,533.573842 L601.097432,533.573842 L601.097432,533.573842 C599.992862,533.573842 599.097432,532.678411 599.097432,531.573842 C599.097432,531.163497 599.223651,530.763084 599.458968,530.426917 L609.617657,515.914504 L609.617657,515.914504 C610.251086,515.009606 611.498147,514.789536 612.403045,515.422965 C612.594328,515.556863 612.760686,515.723222 612.894584,515.914504 Z" id="arrow-head" fill="#545E6F" transform="translate(611.256292, 524.317549) rotate(-90.000000) translate(-611.256292, -524.317549) "></path>
+                <rect id="Rectangle-3" stroke="#545E6F" stroke-width="4" stroke-linecap="round" x="80" y="114" width="660" height="410" rx="20"></rect>
+                <rect id="Rectangle-6" fill="#FFFFFF" x="27" y="353" width="781" height="236"></rect>
+                <text id="Sent-to" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" fill="#545E6F">
+                    <tspan x="639.7" y="171">Sent to</tspan>
+                </text>
+                <g id="Group-2" transform="translate(680.000000, 259.000000)">
+                    <g id="Oval">
+                        <use fill="#F9BE65" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <circle stroke="#FFFFFF" stroke-width="18" cx="60" cy="60" r="69"></circle>
+                    </g>
+                    <text id="REDUCER" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" letter-spacing="0.600000024" fill="#FFFFFF">
+                        <tspan x="13" y="65">REDUCE</tspan>
+                        <tspan x="94.6300001" y="65">R</tspan>
+                    </text>
+                </g>
+                <path d="M742.955842,225.853247 L753.11453,240.36566 L753.11453,240.36566 C753.747959,241.270558 753.52789,242.517619 752.622991,243.151048 C752.286824,243.386365 751.886411,243.512584 751.476067,243.512584 L731.158689,243.512584 L731.158689,243.512584 C730.054119,243.512584 729.158689,242.617154 729.158689,241.512584 C729.158689,241.10224 729.284908,240.701827 729.520225,240.36566 L739.678914,225.853247 L739.678914,225.853247 C740.312343,224.948348 741.559404,224.728279 742.464302,225.361708 C742.655585,225.495606 742.821944,225.661964 742.955842,225.853247 Z" id="arrow-head" fill="#545E6F" transform="translate(741.317549, 234.256292) rotate(-180.000000) translate(-741.317549, -234.256292) "></path>
+                <rect id="Rectangle-6" fill="#FFFFFF" x="599" y="0" width="220" height="599"></rect>
+                <rect id="Rectangle-5" stroke="#4FB688" stroke-width="4" stroke-linecap="round" stroke-dasharray="10,14" x="303" y="26" width="597" height="588" rx="15"></rect>
+                <text id="Dispatch" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" fill="#545E6F">
+                    <tspan x="120" y="171">Dispatch</tspan>
+                </text>
+                <g id="Group-3" transform="translate(0.000000, 293.000000)">
+                    <g id="Rectangle">
+                        <use fill="#6DB0DC" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#FFFFFF" stroke-width="18" x="-9" y="-9" width="178" height="68" rx="5"></rect>
+                    </g>
+                    <text id="COMPONENT" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" letter-spacing="0.600000024" fill="#FFFFFF">
+                        <tspan x="15" y="31">COMPONENT</tspan>
+                    </text>
+                </g>
+                <g id="Group-2" transform="translate(466.000000, 56.000000)">
+                    <g id="Oval">
+                        <use fill="#DF7575" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <circle stroke="#FFFFFF" stroke-width="18" cx="60" cy="60" r="69"></circle>
+                    </g>
+                    <text id="ACTION" font-family="TTNorms-Bold, TT Norms" font-size="18" font-weight="bold" letter-spacing="0.600000024" fill="#FFFFFF">
+                        <tspan x="22" y="65">ACTIO</tspan>
+                        <tspan x="83.0500001" y="65">N</tspan>
+                    </text>
+                </g>
+                <path d="M442.894584,105.914504 L453.053273,120.426917 L453.053273,120.426917 C453.686702,121.331816 453.466633,122.578877 452.561734,123.212306 C452.225567,123.447622 451.825154,123.573842 451.414809,123.573842 L431.097432,123.573842 L431.097432,123.573842 C429.992862,123.573842 429.097432,122.678411 429.097432,121.573842 C429.097432,121.163497 429.223651,120.763084 429.458968,120.426917 L439.617657,105.914504 L439.617657,105.914504 C440.251086,105.009606 441.498147,104.789536 442.403045,105.422965 C442.594328,105.556863 442.760686,105.723222 442.894584,105.914504 Z" id="arrow-head" fill="#545E6F" transform="translate(441.256292, 114.317549) rotate(-270.000000) translate(-441.256292, -114.317549) "></path>
+            </g>
+            <text id="STORE" font-family="TTNorms-Bold, TT Norms" font-size="26" font-weight="bold" fill="#4FB688">
+                <tspan x="520" y="370">STORE</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
