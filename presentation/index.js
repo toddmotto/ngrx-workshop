@@ -13,6 +13,8 @@ import {
   Slide,
   Text,
   Image,
+  CodePane,
+  Code,
 } from 'spectacle';
 
 // Import image preloader util
@@ -27,6 +29,11 @@ require('spectacle/lib/themes/default/index.css');
 
 const images = {
   logo: require('../assets/logo.svg'),
+  store1: require('../assets/store/1.svg'),
+  store2: require('../assets/store/2.svg'),
+  store3: require('../assets/store/3.svg'),
+  store4: require('../assets/store/4.svg'),
+  store5: require('../assets/store/5.svg'),
   audience: require('../assets/audience.jpg'),
 };
 
@@ -183,6 +190,73 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={2} caps textColor="white">
+            Redux
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Redux: Three Principles
+          </Heading>
+          <List>
+            <ListItem>1. Single source of truth</ListItem>
+            <ListItem>2. State is read-only</ListItem>
+            <ListItem>3. Pure functions update state</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} caps textColor="white">
+            1. Single source of truth
+          </Heading>
+          <List textColor="white">
+            <ListItem>State inside a Store</ListItem>
+            <ListItem>Predictability, maintainability</ListItem>
+            <ListItem>Universal apps (SSR)</ListItem>
+            <ListItem>Testing and debugging</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} caps textColor="white">
+            2. State is read-only
+          </Heading>
+          <List textColor="white">
+            <ListItem>Derive specific props from state</ListItem>
+            <ListItem>Dispatch actions to change the state</ListItem>
+            <ListItem>Immutable update patterns</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading fit caps textColor="white">
+            3. Pure functions update state
+          </Heading>
+          <List textColor="white">
+            <ListItem>Pure functions (reducers)</ListItem>
+            <ListItem>Reducers look for action types</ListItem>
+            <ListItem>Return new state</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} caps textColor="white">
+            Let's explore
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Redux: Core Concepts
+          </Heading>
+          <List>
+            <ListItem>Single state tree</ListItem>
+            <ListItem>Actions</ListItem>
+            <ListItem>Reducers</ListItem>
+          </List>
+        </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
             Meet ngrx/store
@@ -194,27 +268,9 @@ export default class Presentation extends React.Component {
             ngrx/store
           </Heading>
           <List>
-            <ListItem>Store</ListItem>
-            <ListItem>Actions</ListItem>
-            <ListItem>Reducers</ListItem>
+            <ListItem>Observables</ListItem>
+            <ListItem>Based on Redux</ListItem>
             <ListItem>Selectors</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            Observations
-          </Heading>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            Observations
-          </Heading>
-          <List>
-            <ListItem>Single source of truth</ListItem>
-            <ListItem>Immutable/read-only</ListItem>
-            <ListItem>Reducer: pure function</ListItem>
           </List>
         </Slide>
       </Deck>
