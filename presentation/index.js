@@ -222,7 +222,7 @@ export default class Presentation extends React.Component {
               Two properties: <Code textColor="white">type</Code> and{' '}
               <Code textColor="white">payload</Code>
             </ListItem>
-            <ListItem>Dispatch actions to reducers</ListItem>
+            <ListItem>Dispatch Actions to Reducers</ListItem>
           </List>
         </Slide>
 
