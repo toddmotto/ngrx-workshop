@@ -34,6 +34,10 @@ const images = {
   store3: require('../assets/store/3.svg'),
   store4: require('../assets/store/4.svg'),
   store5: require('../assets/store/5.svg'),
+  flow1: require('../assets/flow/1.svg'),
+  flow2: require('../assets/flow/2.svg'),
+  flow3: require('../assets/flow/3.svg'),
+  flow4: require('../assets/flow/4.svg'),
   audience: require('../assets/audience.jpg'),
 };
 
@@ -198,6 +202,65 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
+            Redux: Core Concepts
+          </Heading>
+          <List>
+            <ListItem>Actions</ListItem>
+            <ListItem>Reducers</ListItem>
+            <ListItem>Single state tree</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} caps textColor="white">
+            Actions
+          </Heading>
+          <List textColor="white">
+            <ListItem>JavaScript Object</ListItem>
+            <ListItem>Describes an event</ListItem>
+            <ListItem>
+              Two properties: <Code textColor="white">type</Code> and{' '}
+              <Code textColor="white">payload</Code>
+            </ListItem>
+            <ListItem>Dispatch actions to reducers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgImage={images.store1} />
+        <Slide transition={['fade']} bgImage={images.store2} />
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} caps textColor="white">
+            Reducers
+          </Heading>
+          <List textColor="white">
+            <ListItem>Pure function</ListItem>
+            <ListItem>Given previous state</ListItem>
+            <ListItem>Given dispatched Action</ListItem>
+            <ListItem>
+              Responds to <Code textColor="white">action.type</Code>
+            </ListItem>
+            <ListItem>Reducers combined into state tree</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgImage={images.store3} />
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} caps textColor="white">
+            Single state tree
+          </Heading>
+          <List textColor="white">
+            <ListItem>Plain JavaScript Object</ListItem>
+            <ListItem>Composed by a root reducer</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgImage={images.store4} />
+        <Slide transition={['fade']} bgImage={images.store5} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             Redux: Three Principles
           </Heading>
           <List>
@@ -241,22 +304,6 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
-            Let's explore
-          </Heading>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            Redux: Core Concepts
-          </Heading>
-          <List>
-            <ListItem>Single state tree</ListItem>
-            <ListItem>Actions</ListItem>
-            <ListItem>Reducers</ListItem>
-          </List>
-        </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
             Meet ngrx/store
