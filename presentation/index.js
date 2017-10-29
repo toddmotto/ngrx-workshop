@@ -263,6 +263,7 @@ export default class Presentation extends React.Component {
             <ListItem>Actions</ListItem>
             <ListItem>Reducers</ListItem>
             <ListItem>Store</ListItem>
+            <ListItem>One-way dataflow</ListItem>
           </List>
         </Slide>
 
@@ -356,6 +357,12 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            One-way dataflow
+          </Heading>
+        </Slide>
+
         <Slide transition={['slide']} bgImage={images.store1} />
         <Slide transition={['']} bgImage={images.store2} />
         <Slide transition={['']} bgImage={images.store3} />
@@ -363,8 +370,11 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.store5} />
 
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={4} textColor="secondary" caps>
+          <Heading fit textColor="secondary" caps>
             Meet ngrx/store
+          </Heading>
+          <Heading margin="50px 0 0" fit textColor="tertiary" caps>
+            Redux inspired reactive state management
           </Heading>
         </Slide>
 
@@ -373,9 +383,34 @@ export default class Presentation extends React.Component {
             ngrx/store
           </Heading>
           <List>
-            <ListItem>Observables</ListItem>
             <ListItem>Based on Redux</ListItem>
-            <ListItem>Selectors</ListItem>
+            <ListItem>Written with Observables</ListItem>
+            <ListItem>Made for Angular</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            ngrx/store in Angular
+          </Heading>
+          <List>
+            <ListItem>Single source of truth</ListItem>
+            <ListItem>Testability</ListItem>
+            <ListItem>
+              Performance benefits
+              <List margin="0 0 0 50px">
+                <ListItem>ChangeDetectionStrategy.OnPush</ListItem>
+                <ListItem>Immutable @Inputs</ListItem>
+                <ListItem>Object reference checks are fast</ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              Root and feature module support
+              <List margin="0 0 0 50px">
+                <ListItem>Eagerly loaded modules</ListItem>
+                <ListItem>Lazily loaded modules</ListItem>
+              </List>
+            </ListItem>
           </List>
         </Slide>
       </Deck>
