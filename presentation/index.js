@@ -184,11 +184,12 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
+          <Heading fit caps textColor="tertiary">
             State management libraries
           </Heading>
           <List>
             <ListItem>Model our app state</ListItem>
+            <ListItem>Update state</ListItem>
             <ListItem>Derive computed values from state</ListItem>
             <ListItem>Monitor/observe changes to state</ListItem>
           </List>
