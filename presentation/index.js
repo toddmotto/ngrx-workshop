@@ -259,6 +259,11 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgImage={images.store4} />
         <Slide transition={['fade']} bgImage={images.store5} />
 
+        <Slide transition={['fade']} bgImage={images.flow1} />
+        <Slide transition={['fade']} bgImage={images.flow2} />
+        <Slide transition={['fade']} bgImage={images.flow3} />
+        <Slide transition={['fade']} bgImage={images.flow4} />
+
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
             Redux: Three Principles
