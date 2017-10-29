@@ -211,6 +211,51 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
+            Redux: Three Principles
+          </Heading>
+          <List>
+            <ListItem>1. Single source of truth</ListItem>
+            <ListItem>2. State is read-only</ListItem>
+            <ListItem>3. Pure functions update state</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            1. Single source of truth
+          </Heading>
+          <List>
+            <ListItem>One state tree inside Store</ListItem>
+            <ListItem>Predictability, maintainability</ListItem>
+            <ListItem>Universal apps (SSR)</ListItem>
+            <ListItem>Testing and debugging</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            2. State is read-only
+          </Heading>
+          <List>
+            <ListItem>Derive specific props from state</ListItem>
+            <ListItem>Dispatch actions to change the state</ListItem>
+            <ListItem>Immutable update patterns</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading fit caps textColor="tertiary">
+            3. Pure functions update state
+          </Heading>
+          <List>
+            <ListItem>Pure functions (reducers)</ListItem>
+            <ListItem>Reducers look for action types</ListItem>
+            <ListItem>Return new state</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             Redux: Core Concepts
           </Heading>
           <List>
@@ -317,53 +362,8 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.store4} />
         <Slide transition={['']} bgImage={images.store5} />
 
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            Redux: Three Principles
-          </Heading>
-          <List>
-            <ListItem>1. Single source of truth</ListItem>
-            <ListItem>2. State is read-only</ListItem>
-            <ListItem>3. Pure functions update state</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            1. Single source of truth
-          </Heading>
-          <List>
-            <ListItem>One state tree inside Store</ListItem>
-            <ListItem>Predictability, maintainability</ListItem>
-            <ListItem>Universal apps (SSR)</ListItem>
-            <ListItem>Testing and debugging</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            2. State is read-only
-          </Heading>
-          <List>
-            <ListItem>Derive specific props from state</ListItem>
-            <ListItem>Dispatch actions to change the state</ListItem>
-            <ListItem>Immutable update patterns</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading fit caps textColor="tertiary">
-            3. Pure functions update state
-          </Heading>
-          <List>
-            <ListItem>Pure functions (reducers)</ListItem>
-            <ListItem>Reducers look for action types</ListItem>
-            <ListItem>Return new state</ListItem>
-          </List>
-        </Slide>
-
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
+          <Heading size={4} textColor="secondary" caps>
             Meet ngrx/store
           </Heading>
         </Slide>
