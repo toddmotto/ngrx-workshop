@@ -195,8 +195,8 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={2} caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading size={2} caps textColor="tertiary">
             Redux
           </Heading>
         </Slide>
@@ -206,64 +206,74 @@ export default class Presentation extends React.Component {
             Redux: Core Concepts
           </Heading>
           <List>
+            <ListItem>Single state tree</ListItem>
             <ListItem>Actions</ListItem>
             <ListItem>Reducers</ListItem>
-            <ListItem>Single state tree</ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
-            Actions
-          </Heading>
-          <List textColor="white">
-            <ListItem>JavaScript Object</ListItem>
-            <ListItem>Describes an event</ListItem>
-            <ListItem>
-              Two properties: <Code textColor="white">type</Code> and{' '}
-              <Code textColor="white">payload</Code>
-            </ListItem>
-            <ListItem>Dispatch Actions to Reducers</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={images.store1} />
-        <Slide transition={['fade']} bgImage={images.store2} />
-
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
-            Reducers
-          </Heading>
-          <List textColor="white">
-            <ListItem>Pure function</ListItem>
-            <ListItem>Given previous state</ListItem>
-            <ListItem>Given dispatched Action</ListItem>
-            <ListItem>
-              Responds to <Code textColor="white">action.type</Code>
-            </ListItem>
-            <ListItem>Reducers combined into state tree</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={images.store3} />
-
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             Single state tree
           </Heading>
-          <List textColor="white">
+          <List>
             <ListItem>Plain JavaScript Object</ListItem>
             <ListItem>Composed by a root reducer</ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgImage={images.store4} />
-        <Slide transition={['fade']} bgImage={images.store5} />
+        <Slide transition={['slide']} bgImage={images.flow1} />
 
-        <Slide transition={['fade']} bgImage={images.flow1} />
-        <Slide transition={['fade']} bgImage={images.flow2} />
-        <Slide transition={['fade']} bgImage={images.flow3} />
-        <Slide transition={['fade']} bgImage={images.flow4} />
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Actions
+          </Heading>
+          <List>
+            <ListItem>JavaScript Object</ListItem>
+            <ListItem>Describes an event</ListItem>
+            <ListItem>
+              Two properties: <Code>type</Code> and <Code>payload</Code>
+            </ListItem>
+            <ListItem>Dispatch Actions to Reducers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow2} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Reducers
+          </Heading>
+          <List>
+            <ListItem>Pure function</ListItem>
+            <ListItem>Given previous state</ListItem>
+            <ListItem>Given dispatched Action</ListItem>
+            <ListItem>
+              Responds to <Code>action.type</Code>
+            </ListItem>
+            <ListItem>Returns new state</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow3} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Computes new state
+          </Heading>
+          <List>
+            <ListItem>Reducer returns new state</ListItem>
+            <ListItem>Updates the state tree</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow4} />
+
+        <Slide transition={['slide']} bgImage={images.store1} />
+        <Slide transition={['']} bgImage={images.store2} />
+        <Slide transition={['']} bgImage={images.store3} />
+        <Slide transition={['']} bgImage={images.store4} />
+        <Slide transition={['']} bgImage={images.store5} />
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
@@ -276,11 +286,11 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             1. Single source of truth
           </Heading>
-          <List textColor="white">
+          <List>
             <ListItem>State inside a Store</ListItem>
             <ListItem>Predictability, maintainability</ListItem>
             <ListItem>Universal apps (SSR)</ListItem>
@@ -288,22 +298,22 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             2. State is read-only
           </Heading>
-          <List textColor="white">
+          <List>
             <ListItem>Derive specific props from state</ListItem>
             <ListItem>Dispatch actions to change the state</ListItem>
             <ListItem>Immutable update patterns</ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading fit caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading fit caps textColor="tertiary">
             3. Pure functions update state
           </Heading>
-          <List textColor="white">
+          <List>
             <ListItem>Pure functions (reducers)</ListItem>
             <ListItem>Reducers look for action types</ListItem>
             <ListItem>Return new state</ListItem>
