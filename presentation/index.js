@@ -413,6 +413,12 @@ export default class Presentation extends React.Component {
             </ListItem>
           </List>
         </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="primary" caps>
+            Part II: Writing a Store
+          </Heading>
+        </Slide>
       </Deck>
     );
   }
