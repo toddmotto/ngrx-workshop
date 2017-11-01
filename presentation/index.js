@@ -36,6 +36,17 @@ const images = {
   store3: require('../assets/store/3.svg'),
   store4: require('../assets/store/4.svg'),
   store5: require('../assets/store/5.svg'),
+  effects1: require('../assets/effects/1.svg'),
+  effects2: require('../assets/effects/2.svg'),
+  effects3: require('../assets/effects/3.svg'),
+  effects4: require('../assets/effects/4.svg'),
+  effects5: require('../assets/effects/5.svg'),
+  effects6: require('../assets/effects/6.svg'),
+  effects7: require('../assets/effects/7.svg'),
+  effects8: require('../assets/effects/8.svg'),
+  effects9: require('../assets/effects/9.svg'),
+  effects10: require('../assets/effects/10.svg'),
+  effects11: require('../assets/effects/11.svg'),
   flow1: require('../assets/flow/1.svg'),
   flow2: require('../assets/flow/2.svg'),
   flow3: require('../assets/flow/3.svg'),
@@ -162,7 +173,8 @@ export default class Presentation extends React.Component {
             Project setup
           </Heading>
           <List textColor="secondary">
-            <ListItem>Visit: </ListItem>
+            <ListItem>github.com/toddmotto/ac-store</ListItem>
+            <ListItem>github.com/toddmotto/ac-ngrx-app</ListItem>
           </List>
         </Slide>
 
@@ -369,6 +381,27 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.store4} />
         <Slide transition={['']} bgImage={images.store5} />
 
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="primary" caps>
+            Part II: Writing a Store
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Project:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>github.com/toddmotto/ac-store</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="primary" caps>
+            Part III: NGRX
+          </Heading>
+        </Slide>
+
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading fit textColor="secondary" caps>
             Meet ngrx/store
@@ -414,10 +447,13 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
-          <Heading size={4} textColor="primary" caps>
-            Part II: Writing a Store
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Project:
           </Heading>
+          <List textColor="secondary">
+            <ListItem>github.com/toddmotto/ac-ngrx-app</ListItem>
+          </List>
         </Slide>
       </Deck>
     );
