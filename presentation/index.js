@@ -29,6 +29,8 @@ require('spectacle/lib/themes/default/index.css');
 
 const images = {
   logo: require('../assets/logo.svg'),
+  audience: require('../assets/audience.jpg'),
+  redux: require('../assets/redux.png'),
   store1: require('../assets/store/1.svg'),
   store2: require('../assets/store/2.svg'),
   store3: require('../assets/store/3.svg'),
@@ -38,7 +40,6 @@ const images = {
   flow2: require('../assets/flow/2.svg'),
   flow3: require('../assets/flow/3.svg'),
   flow4: require('../assets/flow/4.svg'),
-  audience: require('../assets/audience.jpg'),
 };
 
 preloader(images);
@@ -106,9 +107,10 @@ export default class Presentation extends React.Component {
             Today's plan
           </Heading>
           <List textColor="secondary">
-            <ListItem>State management concepts</ListItem>
-            <ListItem>Small application to apply concepts</ListItem>
-            <ListItem>Move onto advanced app and examples</ListItem>
+            <ListItem>Explore Redux concepts</ListItem>
+            <ListItem>Write our own Redux Store</ListItem>
+            <ListItem>Implement NGRX in an Angular app</ListItem>
+            <ListItem>Advanced topics, testing, debugging</ListItem>
           </List>
         </Slide>
 
@@ -172,15 +174,25 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
-            What is state?
+            What is app state?
           </Heading>
           <List>
-            <ListItem>What's happening</ListItem>
-            <ListItem>e.g. value of an input</ListItem>
-            <ListItem>e.g. a list of items</ListItem>
-            <ListItem>e.g. an open navbar</ListItem>
-            <ListItem>e.g. variables, classes, data structures</ListItem>
+            <ListItem>Server response data</ListItem>
+            <ListItem>User credentials</ListItem>
+            <ListItem>User input (search/filtering)</ListItem>
+            <ListItem>UI state (toggles/messages)</ListItem>
+            <ListItem>Router / location state</ListItem>
+            <ListItem>Much more...</ListItem>
           </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading fit caps textColor="white">
+            We compose app state
+          </Heading>
+          <Heading fit caps textColor="white">
+            in our Store
+          </Heading>
         </Slide>
 
         <Slide transition={['fade']}>
@@ -190,80 +202,12 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>Model our app state</ListItem>
             <ListItem>Update state</ListItem>
-            <ListItem>Derive computed values from state</ListItem>
+            <ListItem>Read state values</ListItem>
             <ListItem>Monitor/observe changes to state</ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={2} caps textColor="white">
-            Redux
-          </Heading>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
-            Redux: Core Concepts
-          </Heading>
-          <List>
-            <ListItem>Actions</ListItem>
-            <ListItem>Reducers</ListItem>
-            <ListItem>Single state tree</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
-            Actions
-          </Heading>
-          <List textColor="white">
-            <ListItem>JavaScript Object</ListItem>
-            <ListItem>Describes an event</ListItem>
-            <ListItem>
-              Two properties: <Code textColor="white">type</Code> and{' '}
-              <Code textColor="white">payload</Code>
-            </ListItem>
-            <ListItem>Dispatch Actions to Reducers</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={images.store1} />
-        <Slide transition={['fade']} bgImage={images.store2} />
-
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
-            Reducers
-          </Heading>
-          <List textColor="white">
-            <ListItem>Pure function</ListItem>
-            <ListItem>Given previous state</ListItem>
-            <ListItem>Given dispatched Action</ListItem>
-            <ListItem>
-              Responds to <Code textColor="white">action.type</Code>
-            </ListItem>
-            <ListItem>Reducers combined into state tree</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={images.store3} />
-
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
-            Single state tree
-          </Heading>
-          <List textColor="white">
-            <ListItem>Plain JavaScript Object</ListItem>
-            <ListItem>Composed by a root reducer</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']} bgImage={images.store4} />
-        <Slide transition={['fade']} bgImage={images.store5} />
-
-        <Slide transition={['fade']} bgImage={images.flow1} />
-        <Slide transition={['fade']} bgImage={images.flow2} />
-        <Slide transition={['fade']} bgImage={images.flow3} />
-        <Slide transition={['fade']} bgImage={images.flow4} />
+        <Slide transition={['fade']} bgImage={images.redux} />
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
@@ -276,43 +220,161 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             1. Single source of truth
           </Heading>
-          <List textColor="white">
-            <ListItem>State inside a Store</ListItem>
+          <List>
+            <ListItem>One state tree inside Store</ListItem>
             <ListItem>Predictability, maintainability</ListItem>
             <ListItem>Universal apps (SSR)</ListItem>
             <ListItem>Testing and debugging</ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={4} caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
             2. State is read-only
           </Heading>
-          <List textColor="white">
+          <List>
             <ListItem>Derive specific props from state</ListItem>
             <ListItem>Dispatch actions to change the state</ListItem>
             <ListItem>Immutable update patterns</ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading fit caps textColor="white">
+        <Slide transition={['fade']}>
+          <Heading fit caps textColor="tertiary">
             3. Pure functions update state
           </Heading>
-          <List textColor="white">
+          <List>
             <ListItem>Pure functions (reducers)</ListItem>
             <ListItem>Reducers look for action types</ListItem>
             <ListItem>Return new state</ListItem>
           </List>
         </Slide>
 
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Redux: Core Concepts
+          </Heading>
+          <List>
+            <ListItem>Single state tree</ListItem>
+            <ListItem>Actions</ListItem>
+            <ListItem>Reducers</ListItem>
+            <ListItem>Store</ListItem>
+            <ListItem>One-way dataflow</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Single state tree
+          </Heading>
+          <List>
+            <ListItem>Plain JavaScript Object</ListItem>
+            <ListItem>Composed by reducers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow1} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Actions
+          </Heading>
+          <List>
+            <ListItem>JavaScript Objects</ListItem>
+            <ListItem>
+              Two properties:
+              <List margin="0 0 0 50px">
+                <ListItem>
+                  <Code>type</Code>: string, describes event
+                </ListItem>
+                <ListItem>
+                  <Code>payload</Code>: optional data
+                </ListItem>
+              </List>
+            </ListItem>
+            <ListItem>Dispatch Actions to Reducers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow2} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Reducers
+          </Heading>
+          <List>
+            <ListItem>Pure functions</ListItem>
+            <ListItem>Given previous state</ListItem>
+            <ListItem>
+              Given dispatched Action
+              <List margin="0 0 0 50px">
+                <ListItem>
+                  Responds to <Code>Action.type</Code>
+                </ListItem>
+                <ListItem>
+                  Access to <Code>Action.payload</Code>
+                </ListItem>
+                <ListItem>Composes new state</ListItem>
+              </List>
+            </ListItem>
+            <ListItem>Returns new state</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow3} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Computes new state
+          </Heading>
+          <Heading margin="50px 0 0 0" fit caps textColor="secondary">
+            state = reducer(state, action)
+          </Heading>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.flow4} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Store
+          </Heading>
+          <List>
+            <ListItem>Store contains the state</ListItem>
+            <ListItem>
+              Components:
+              <List margin="0 0 0 50px">
+                <ListItem>Subscribe to the Store's state</ListItem>
+                <ListItem>Dispatch actions to Store</ListItem>
+              </List>
+            </ListItem>
+            <ListItem>Store calls reducers with state/action</ListItem>
+            <ListItem>New state is composed</ListItem>
+            <ListItem>Store is updated, notifies subscribers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            One-way dataflow
+          </Heading>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.store1} />
+        <Slide transition={['']} bgImage={images.store2} />
+        <Slide transition={['']} bgImage={images.store3} />
+        <Slide transition={['']} bgImage={images.store4} />
+        <Slide transition={['']} bgImage={images.store5} />
+
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
+          <Heading fit textColor="secondary" caps>
             Meet ngrx/store
+          </Heading>
+          <Heading margin="50px 0 0" fit textColor="tertiary" caps>
+            Redux inspired reactive state management
           </Heading>
         </Slide>
 
@@ -321,10 +383,41 @@ export default class Presentation extends React.Component {
             ngrx/store
           </Heading>
           <List>
-            <ListItem>Observables</ListItem>
             <ListItem>Based on Redux</ListItem>
-            <ListItem>Selectors</ListItem>
+            <ListItem>Written with Observables</ListItem>
+            <ListItem>Made for Angular</ListItem>
           </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            ngrx/store in Angular
+          </Heading>
+          <List>
+            <ListItem>Single source of truth</ListItem>
+            <ListItem>Testability</ListItem>
+            <ListItem>
+              Performance benefits
+              <List margin="0 0 0 50px">
+                <ListItem>ChangeDetectionStrategy.OnPush</ListItem>
+                <ListItem>Immutable @Inputs</ListItem>
+                <ListItem>Object reference checks are fast</ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              Root and feature module support
+              <List margin="0 0 0 50px">
+                <ListItem>Eagerly loaded modules</ListItem>
+                <ListItem>Lazily loaded modules</ListItem>
+              </List>
+            </ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
+          <Heading size={4} textColor="primary" caps>
+            Part II: Writing a Store
+          </Heading>
         </Slide>
       </Deck>
     );
