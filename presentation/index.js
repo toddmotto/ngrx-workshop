@@ -455,6 +455,18 @@ export default class Presentation extends React.Component {
             <ListItem>github.com/toddmotto/ac-ngrx-app</ListItem>
           </List>
         </Slide>
+
+        <Slide transition={['slide']} bgImage={images.effects1} />
+        <Slide transition={['']} bgImage={images.effects2} />
+        <Slide transition={['']} bgImage={images.effects3} />
+        <Slide transition={['']} bgImage={images.effects4} />
+        <Slide transition={['']} bgImage={images.effects5} />
+        <Slide transition={['']} bgImage={images.effects6} />
+        <Slide transition={['']} bgImage={images.effects7} />
+        <Slide transition={['']} bgImage={images.effects8} />
+        <Slide transition={['']} bgImage={images.effects9} />
+        <Slide transition={['']} bgImage={images.effects10} />
+        <Slide transition={['']} bgImage={images.effects11} />
       </Deck>
     );
   }
