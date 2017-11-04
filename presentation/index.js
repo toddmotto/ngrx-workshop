@@ -560,17 +560,6 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
-            NGRX: Selectors
-          </Heading>
-        </Slide>
-
-        <Slide transition={['']} bgImage={images.ngrxSelectors1} />
-        <Slide transition={['']} bgImage={images.ngrxSelectors2} />
-        <Slide transition={['']} bgImage={images.ngrxSelectors3} />
-        <Slide transition={['']} bgImage={images.ngrxSelectors4} />
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
             NGRX: Reducers
           </Heading>
         </Slide>
@@ -579,6 +568,17 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.ngrxReducers2} />
         <Slide transition={['']} bgImage={images.ngrxReducers3} />
         <Slide transition={['']} bgImage={images.ngrxReducers4} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            NGRX: Selectors
+          </Heading>
+        </Slide>
+
+        <Slide transition={['']} bgImage={images.ngrxSelectors1} />
+        <Slide transition={['']} bgImage={images.ngrxSelectors2} />
+        <Slide transition={['']} bgImage={images.ngrxSelectors3} />
+        <Slide transition={['']} bgImage={images.ngrxSelectors4} />
 
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading fit textColor="secondary" caps>
