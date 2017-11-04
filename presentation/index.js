@@ -532,15 +532,6 @@ export default class Presentation extends React.Component {
 
         <Slide transition={['fade']}>
           <Heading size={4} caps textColor="tertiary">
-            Project:
-          </Heading>
-          <List textColor="secondary">
-            <ListItem>github.com/toddmotto/ac-ngrx-app</ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={['fade']}>
-          <Heading size={4} caps textColor="tertiary">
             NGRX: Setup
           </Heading>
         </Slide>
@@ -579,6 +570,48 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.ngrxSelectors2} />
         <Slide transition={['']} bgImage={images.ngrxSelectors3} />
         <Slide transition={['']} bgImage={images.ngrxSelectors4} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Project:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>github.com/toddmotto/ac-ngrx-app</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} textColor="white" caps>
+            Codebase exploration
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>1a, 1b</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>2a, 2b</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>2c, 2d, 2e</ListItem>
+          </List>
+        </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading fit textColor="secondary" caps>
@@ -625,6 +658,94 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.ngrxEffects1} />
         <Slide transition={['']} bgImage={images.ngrxEffects2} />
         <Slide transition={['']} bgImage={images.ngrxEffects3} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>3a</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>3b, 3c</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>3d, 3e</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>4a</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} textColor="white" caps>
+            Dev Tools Demo
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>5a, 5b, 5c, 5d</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>6a - 6d</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>7a - 7h</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Exercises:
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>You choose!</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Thank you!
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>@toddmotto</ListItem>
+            <ListItem>toddmotto.com</ListItem>
+          </List>
+        </Slide>
       </Deck>
     );
   }
