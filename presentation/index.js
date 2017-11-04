@@ -432,9 +432,9 @@ export default class Presentation extends React.Component {
             Why immutable?
           </Heading>
           <List>
-            <ListItem>Predictability</ListItem>
+            <ListItem>Predictability (no references)</ListItem>
             <ListItem>Explicit state changes</ListItem>
-            <ListItem>Performance (Angular's Change Detection)</ListItem>
+            <ListItem>Performance (Change Detection)</ListItem>
             <ListItem>Mutation Tracking</ListItem>
             <ListItem>Undo state changes</ListItem>
           </List>
