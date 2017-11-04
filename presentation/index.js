@@ -51,6 +51,27 @@ const images = {
   flow2: require('../assets/flow/2.svg'),
   flow3: require('../assets/flow/3.svg'),
   flow4: require('../assets/flow/4.svg'),
+  immutable1: require('../assets/immutable/1.svg'),
+  immutable2: require('../assets/immutable/2.svg'),
+  immutable3: require('../assets/immutable/3.svg'),
+  immutable4: require('../assets/immutable/4.svg'),
+  immutable5: require('../assets/immutable/5.svg'),
+  ngrxSetup1: require('../assets/ngrx/setup/1.svg'),
+  ngrxSetup2: require('../assets/ngrx/setup/2.svg'),
+  ngrxSetup3: require('../assets/ngrx/setup/3.svg'),
+  ngrxSelectors1: require('../assets/ngrx/selectors/1.svg'),
+  ngrxSelectors2: require('../assets/ngrx/selectors/2.svg'),
+  ngrxSelectors3: require('../assets/ngrx/selectors/3.svg'),
+  ngrxSelectors4: require('../assets/ngrx/selectors/4.svg'),
+  ngrxReducers1: require('../assets/ngrx/reducers/1.svg'),
+  ngrxReducers2: require('../assets/ngrx/reducers/2.svg'),
+  ngrxReducers3: require('../assets/ngrx/reducers/3.svg'),
+  ngrxReducers4: require('../assets/ngrx/reducers/4.svg'),
+  ngrxEffects1: require('../assets/ngrx/effects/1.svg'),
+  ngrxEffects2: require('../assets/ngrx/effects/2.svg'),
+  ngrxEffects3: require('../assets/ngrx/effects/3.svg'),
+  ngrxActions1: require('../assets/ngrx/actions/1.svg'),
+  ngrxActions2: require('../assets/ngrx/actions/2.svg'),
 };
 
 preloader(images);
@@ -175,6 +196,16 @@ export default class Presentation extends React.Component {
           <List textColor="secondary">
             <ListItem>github.com/toddmotto/ac-store</ListItem>
             <ListItem>github.com/toddmotto/ac-ngrx-app</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Dev Tools Extension
+          </Heading>
+          <List textColor="secondary">
+            <ListItem>Chrome/Firefox</ListItem>
+            <ListItem>extension.remotedev.io</ListItem>
           </List>
         </Slide>
 
@@ -381,6 +412,58 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.store4} />
         <Slide transition={['']} bgImage={images.store5} />
 
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Heading size={4} textColor="white" caps>
+            Let's talk immutable
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
+          <BlockQuote>
+            <Quote>
+              An immutable object is an object whose state cannot be modified
+              after creation.
+            </Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Why immutable?
+          </Heading>
+          <List>
+            <ListItem>Predictability</ListItem>
+            <ListItem>Explicit state changes</ListItem>
+            <ListItem>Performance (Angular's Change Detection)</ListItem>
+            <ListItem>Mutation Tracking</ListItem>
+            <ListItem>Undo state changes</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Immutability in JavaScript
+          </Heading>
+          <List>
+            <ListItem>Examples: Strings, Numbers</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            Mutability in JavaScript
+          </Heading>
+          <List>
+            <ListItem>Examples: Functions, Objects, Arrays</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['']} bgImage={images.immutable1} />
+        <Slide transition={['']} bgImage={images.immutable2} />
+        <Slide transition={['']} bgImage={images.immutable3} />
+        <Slide transition={['']} bgImage={images.immutable4} />
+        <Slide transition={['']} bgImage={images.immutable5} />
+
         <Slide transition={['fade']} bgColor="tertiary" textColor="tertiary">
           <Heading size={4} textColor="primary" caps>
             Part II: Writing a Store
@@ -456,6 +539,67 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            NGRX: Setup
+          </Heading>
+        </Slide>
+
+        <Slide transition={['slide']} bgImage={images.ngrxSetup1} />
+        <Slide transition={['']} bgImage={images.ngrxSetup2} />
+        <Slide transition={['']} bgImage={images.ngrxSetup3} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            NGRX: Actions
+          </Heading>
+        </Slide>
+
+        <Slide transition={['']} bgImage={images.ngrxActions1} />
+        <Slide transition={['']} bgImage={images.ngrxActions2} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            NGRX: Selectors
+          </Heading>
+        </Slide>
+
+        <Slide transition={['']} bgImage={images.ngrxSelectors1} />
+        <Slide transition={['']} bgImage={images.ngrxSelectors2} />
+        <Slide transition={['']} bgImage={images.ngrxSelectors3} />
+        <Slide transition={['']} bgImage={images.ngrxSelectors4} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            NGRX: Reducers
+          </Heading>
+        </Slide>
+
+        <Slide transition={['']} bgImage={images.ngrxReducers1} />
+        <Slide transition={['']} bgImage={images.ngrxReducers2} />
+        <Slide transition={['']} bgImage={images.ngrxReducers3} />
+        <Slide transition={['']} bgImage={images.ngrxReducers4} />
+
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading fit textColor="secondary" caps>
+            Meet ngrx/effects
+          </Heading>
+          <Heading margin="50px 0 0" fit textColor="tertiary" caps>
+            Side effects for ngrx/store
+          </Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            ngrx/effects
+          </Heading>
+          <List>
+            <ListItem>Listen for @ngrx/store actions</ListItem>
+            <ListItem>Isolate side effects from components</ListItem>
+            <ListItem>Communicate outside of Angular</ListItem>
+          </List>
+        </Slide>
+
         <Slide transition={['slide']} bgImage={images.effects1} />
         <Slide transition={['']} bgImage={images.effects2} />
         <Slide transition={['']} bgImage={images.effects3} />
@@ -467,6 +611,20 @@ export default class Presentation extends React.Component {
         <Slide transition={['']} bgImage={images.effects9} />
         <Slide transition={['']} bgImage={images.effects10} />
         <Slide transition={['']} bgImage={images.effects11} />
+
+        <Slide transition={['fade']}>
+          <Heading size={4} caps textColor="tertiary">
+            API
+          </Heading>
+          <List>
+            <ListItem>@Effect()</ListItem>
+            <ListItem>Actions Observable</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['']} bgImage={images.ngrxEffects1} />
+        <Slide transition={['']} bgImage={images.ngrxEffects2} />
+        <Slide transition={['']} bgImage={images.ngrxEffects3} />
       </Deck>
     );
   }
